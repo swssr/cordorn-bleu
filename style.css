@@ -31,12 +31,19 @@
 }
 
 /* Typography */
-html{
+html {
   --ideal-font-size: 16;
-    --clamped-viewport-width: clamp(var(--min-viewport-width), var(--current-viewport-width), var(--max-viewport-width));
+  --clamped-viewport-width: clamp(
+    var(--min-viewport-width),
+    var(--current-viewport-width),
+    var(--max-viewport-width)
+  );
 
-    font-size: calc(var(--ideal-font-size) * var(--clamped-viewport-width) / var(--ideal-viewport-width));
-    scroll-behavior: smooth;
+  font-size: calc(
+    var(--ideal-font-size) * var(--clamped-viewport-width) /
+      var(--ideal-viewport-width)
+  );
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -79,7 +86,7 @@ p {
   opacity: 0.76;
   max-width: 500px;
 }
-.slim{
+.slim {
   font-weight: 400;
 }
 
@@ -112,7 +119,7 @@ p {
   margin-top: var(--normal-gap);
 }
 
-.btn--secondary:hover{
+.btn--secondary:hover {
   background-color: var(--color-accent-2);
 }
 
@@ -148,8 +155,8 @@ a {
   max-width: 640px;
 }
 
-.section > .img{
-  box-shadow: 0 20px 56px hsla(214, 53%, 25%, .56);
+.section > .img {
+  box-shadow: 0 20px 56px hsla(214, 53%, 25%, 0.56);
 }
 
 /* === LAYOUT === */
@@ -163,11 +170,11 @@ a {
   align-items: center;
 }
 
-.nav{
+.nav {
   margin: 2em 0;
 }
 
-.logo{
+.logo {
   width: 180px;
 }
 
@@ -191,14 +198,14 @@ a {
   color: var(--color-secondary);
   z-index: 1;
 }
-.header::before{
+.header::before {
   content: '';
   position: absolute;
   inset: 0;
   background-image: linear-gradient(
     to right,
-    hsla(214, 53%, 15%, .9),
-    hsla(214, 53%, 25%, .1)
+    hsla(214, 53%, 15%, 0.9),
+    hsla(214, 53%, 25%, 0.1)
   );
   z-index: -1;
 }
@@ -320,7 +327,7 @@ a {
   margin: 0 auto;
 }
 
-.services__text p{
+.services__text p {
   max-width: 700px !important;
 }
 
@@ -357,7 +364,7 @@ a {
   left: var(--padding);
   font-weight: 700;
   font-size: 1.5em;
-  opacity: .10;
+  opacity: 0.1;
 }
 
 .services:not(:hover) .service:first-child {
@@ -391,7 +398,7 @@ a {
   max-width: 450px;
 }
 
-.service button{
+.service button {
   margin-top: auto;
 }
 .contacts {
