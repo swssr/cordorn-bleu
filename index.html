@@ -118,7 +118,12 @@
     </section>
 
     <section id="vision" class="section section--light section--vision">
-      <img src="assets/images/vision.png" alt="" class="img vision__img" />
+      <picture>
+        <source srcset="assets/images/vision.avif" type="image/avif">
+        <source srcset="assets/images/vision.webp" type="image/webp">
+        <!-- Fallback for older browsers -->
+        <img src="assets/images/vision.png" alt="" class="img vision__img" loading="lazy"/>
+      </picture>
       <div class="vision__text">
         <h2>We’re Future Facing<br />Solutions Company<br />Company</h2>
         <p>
@@ -129,6 +134,7 @@
         </p>
       </div>
     </section>
+    
 
     <section id="services" class="section section--light section--services">
       <div class="services__text">
@@ -239,7 +245,12 @@
     </section>
 
     <section id="contacts" class="section section--contacts">
-      <img src="assets/images/contact-2.jpg" alt="" class="img contacts__img" loading="lazy" />
+      <picture>
+        <source srcset="assets/images/contact-2.avif" type="image/avif">
+        <source srcset="assets/images/contact-2.webp" type="image/webp">
+        <!-- Fallback for older browsers -->
+        <img src="assets/images/contact-2.png" alt="" class="img vision__img" loading="lazy"/>
+      </picture>
       <div class="contacts__text">
         <h2>
           We’re devoted to providing<br />the best service to our<br />customers.
@@ -257,19 +268,19 @@
               target="_blank"
               href="https://www.google.com/maps/place/AFRICA'S+BEST+350+LTD/@-30.8610997,29.8509009,18z/data=!3m1!4b1!4m12!1m6!3m5!1s0x1e5f5ee6178f3cdd:0x8bf5901c2b72ee69!2sBugwandeen+R+S!8m2!3d-30.85775!4d29.85391!3m4!1s0x1e5f5eef2ea58677:0x94d4f13ba388094b!8m2!3d-30.861101!4d29.8521977"
             >
-              <img src="assets/images/map.svg" class="icon" />
+              <img src="assets/images/map.svg" class="icon" loading="lazy"/>
               OFFICE NO 13, LUNTU BUILDING, BIZANA 4800
             </a>
           </li>
           <li>
             <a href="tel:+27 82 421 4164">
-              <img src="assets/images/phone.svg" class="icon" />
+              <img src="assets/images/phone.svg" class="icon" loading="lazy"/>
               +27 82 421 4164
             </a>
           </li>
           <li>
             <a href="mailto:help@cordornblueconsulting.co.za">
-              <img src="assets/images/mail.svg" class="icon" />
+              <img src="assets/images/mail.svg" class="icon" loading="lazy"/>
               HELP@CORDORNBLUECONSULTING.CO.ZA
             </a>
           </li>
@@ -277,7 +288,7 @@
       </div>
 
       <form class="form">
-        <img src="assets/images/arrow.svg" class="icon icon--arrow" />
+        <img src="assets/images/arrow.svg" class="icon icon--arrow" loading="lazy" />
         <h2>We look forward to helping you meet your Business needs.</h2>
         <div class="input-wrapper">
           <input type="text" placeholder="Type your email here." />
